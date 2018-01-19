@@ -1,0 +1,14 @@
+" Prevent counting arrow keys as characters
+set nocompatible
+set backspace=2
+
+" Enable 256 bit colors for vim 
+let &t_Co=256
+syntax enable
+
+" Show line numbers
+set number
+
+" Set colorscheme
+colorscheme molokai
+
