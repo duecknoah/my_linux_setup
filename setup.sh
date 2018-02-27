@@ -38,7 +38,13 @@ echo "Running color test ..."
 echo "********************************************"
 echo "Setup done!"
 echo "********************************************"
-echo "Restarting in 10 seconds ..."
+echo "To finish setup, you\'ll need to reboot the system, want to do it now? (y-yes, n-no):"
+read x
 
-sudo reboot 10
+if [[ x -eq "y" ]]; then
+	echo "Rebooting!"
+	sudo reboot
+else
+	echo "Cancelling reboot ... Done."
+fi
 
