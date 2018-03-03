@@ -41,7 +41,7 @@ echo "********************************************"
 echo "To finish setup, you\'ll need to reboot the system, want to do it now? (y-yes, n-no):"
 read x
 
-if [[ x -eq "y" ]]; then
+if [ $x == "y" ] || [ $x == "yes" ]; then
 	echo "Rebooting!"
 	sudo reboot
 else
